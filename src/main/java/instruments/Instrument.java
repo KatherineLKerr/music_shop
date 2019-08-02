@@ -29,4 +29,5 @@ public abstract class Instrument {
     public double getSellingPrice() {
         return sellingPrice;
     }
+
 }
