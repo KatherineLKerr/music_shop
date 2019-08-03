@@ -24,6 +24,10 @@ public abstract class Instrument {
         return type;
     }
 
+    public String getColour() {
+        return colour;
+    }
+
     public double getBuyingPrice() {
         return buyingPrice;
     }
