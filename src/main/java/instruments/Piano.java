@@ -8,4 +8,8 @@ public class Piano extends Instrument{
         super(material, type, colour, buyingPrice, sellingPrice);
         this.noOfKeys = noOfKeys;
     }
+
+    public int getNoOfKeys() {
+        return noOfKeys;
+    }
 }
