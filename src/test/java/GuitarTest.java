@@ -47,4 +47,9 @@ public class GuitarTest {
     public void canBePlayed() {
         assertEquals("twang twang twang", guitar.play());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(50.00, guitar.calculateMarkup(), 0.01);
+    }
 }

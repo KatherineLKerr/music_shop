@@ -47,4 +47,9 @@ public class PianoTest {
     public void canBePlayed() {
         assertEquals("plinkplonk", piano.play());
     }
+
+    @Test
+    public void canCalculateMarkup() {
+        assertEquals(600, piano.calculateMarkup(), 0.01);
+    }
 }

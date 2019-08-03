@@ -1,8 +1,9 @@
 package instruments;
 
 import interfaces.IPlay;
+import interfaces.ISell;
 
-public abstract class Instrument implements IPlay {
+public abstract class Instrument implements IPlay, ISell {
 
     protected String material;
     protected String type;
@@ -38,4 +39,7 @@ public abstract class Instrument implements IPlay {
         return sellingPrice;
     }
 
+    public double calculateMarkup() {
+        return sellingPrice - buyingPrice;
+    }
 }
