@@ -52,4 +52,5 @@ public class PianoTest {
     public void canCalculateMarkup() {
         assertEquals(600, piano.calculateMarkup(), 0.01);
     }
+
 }
