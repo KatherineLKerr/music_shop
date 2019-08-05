@@ -55,4 +55,12 @@ public class ShopTest {
         shop.removeItem(guitar);
         assertEquals(2, shop.getStock().size());
     }
+
+    @Test
+    public void canGetTotalPotentialProfit () {
+        shop.addItem(guitar);
+        shop.addItem(tuner);
+        shop.addItem(tuner);
+        assertEquals(114.00, shop.calculateTotalPotentialProfit(), 0.01);
+    }
 }

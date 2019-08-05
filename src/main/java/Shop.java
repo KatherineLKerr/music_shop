@@ -27,4 +27,13 @@ public class Shop {
             }
         }
     }
+
+    public double calculateTotalPotentialProfit() {
+        double totalProfit = 0;
+        for (int i = 0; i < stock.size(); i++) {
+            ISell stockItem = stock.get(i);
+            totalProfit += stockItem.calculateMarkup();
+        }
+        return totalProfit;
+    }
 }
